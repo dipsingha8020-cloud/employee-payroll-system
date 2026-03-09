@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Payroll System</title>
+<link rel="stylesheet" href="style.css">
+<script src="payroll.js"></script>
+</head>
+
+<body onload="displayEmployees()">
+
+<h1>Employee Payroll System</h1>
+
+<div class="box">
+
+<input type="text" id="empid" placeholder="Employee ID">
+<input type="text" id="name" placeholder="Employee Name">
+<input type="number" id="basic" placeholder="Basic Salary">
+<input type="number" id="allowance" placeholder="Allowance">
+<input type="number" id="deduction" placeholder="Deduction">
+
+<br>
+
+<button onclick="addEmployee()">Add Employee</button>
+
+</div>
+
+<h2>Employee List</h2>
+
+<table border="1" id="table">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Gross Salary</th>
+<th>Net Salary</th>
+<th>Delete</th>
+</tr>
+
+</table>
+
+</body>
+</html>
